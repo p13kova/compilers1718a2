@@ -6,12 +6,12 @@
 
 import plex
 '''
-Stmt_list-> Stmt Stmt_list | ε.
+Stmt_list-> Stmt Stmt_list | e.
 Stmt->Expr | print Expr.
 Expr-> Term Term_tail.
-Term_tail->Logic Term Term_tail | ε.
+Term_tail->Logic Term Term_tail | e.
 Term-> Factor Factor_tail.
-Factor_tail ->Neg Factor Factor_tail | ε.
+Factor_tail ->Neg Factor Factor_tail | e.
 Factor->(Expr) | id |boolean | e.
 Logic->and|or.
 Neg-> not.
